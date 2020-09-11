@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+
+	<input type="radio" id="kelaminL" name="kelamin"
+	value="L" /> Laki-laki<br /> 
+	<input type="radio" id="kelaminP" name="kelamin" 
+	value="P" /> Perempuan<br /> 
+	<select name="hobi">
+  <option value="">--Pilih Hobi--</option>
+  <option value="1">1. Komputer</option>
+  <option value="2" selected>2. Otomotif</option>
+  <option value="3">3. Memasak</option>
+  <option value="4">4. Melukis</option>
+  <option value="5">5. Bernyanyi</option>
+</select>
+	<input type="submit" value="Get" 
+	onclick="ambilNilai();" /> 
+
+
+		function ambilNilai(){ 
+			var objKelamin = 
+			document.getElementsByName('kelamin'); 
+			if(objKelamin[0].checked == true){ 
+				alert("Kelaminnya adalah " + 
+					objKelamin[0].value); }
+
+else { 
+alert("Kelaminnya adalah " + 
+objKelamin[1].value); 
+} 
+
+}
+
+</script>
+
+</body>
+</html>
